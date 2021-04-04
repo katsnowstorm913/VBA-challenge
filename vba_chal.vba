@@ -6,15 +6,17 @@ Sub stonks():
     Dim pricechange As Double
     Dim volume As LongLong
     volume = 0
-    'keep track of what row summary is on
-    Dim summaryRow As Integer
-    summaryRow = 2
+    
     'check to see if its the first row of that ticker symbol
     Dim firstTickerRow As Boolean
     firstTickerRow = True
     
     'for each ws loop
     For j = 1 To ActiveWorkbook.Worksheets.Count
+    
+    'keep track of what row summary is on
+    Dim summaryRow As Integer
+    summaryRow = 2
     
         'add summary table headers
         Sheets(j).Cells(1, 9).Value = "Ticker"
@@ -95,3 +97,4 @@ Sub stonks():
     Next j
 
 End Sub
+
