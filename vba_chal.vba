@@ -14,9 +14,9 @@ Sub stonks():
     'for each ws loop
     For j = 1 To ActiveWorkbook.Worksheets.Count
     
-    'keep track of what row summary is on
-    Dim summaryRow As Integer
-    summaryRow = 2
+    	'keep track of what row summary is on
+    	Dim summaryRow As Integer
+    	summaryRow = 2
     
         'add summary table headers
         Sheets(j).Cells(1, 9).Value = "Ticker"
